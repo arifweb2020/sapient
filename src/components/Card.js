@@ -13,13 +13,16 @@ const Card = () => {
 
     const getData = async () =>{
 
-        const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100&amp;launch_success=true&amp;land_success=true&amp;launch_year=2014');
+      
+            const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100&amp;launch_success=true&amp;land_success=true&amp;launch_year=2014');
 
-        const res1 = await res.json();
-
-        console.log(res1);
+            const res1 = await res.json();
+    
+            console.log(res1);
+            
+            setData(res1);
         
-        setData(res1);
+        
     }
 
     return (

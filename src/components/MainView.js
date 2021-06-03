@@ -12,8 +12,11 @@ const MainView = () => {
             
             
                 <Card/>
+
+               
            
                </div>
+               <h4 style={{textAlign:"center"}}>Developed by : <b>Md Arif Hussain</b></h4>
         </div>
     )
 }
